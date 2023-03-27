@@ -1,6 +1,8 @@
 import streamlit as st
 import pickle
 import numpy as np
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.compose import ColumnTransformer
 model=pickle.load(open('model_.pkl','rb'))
 st.title(':red[IPL WIN PREDICTOR] :cricket_bat_and_ball::tada::tada:')
 
