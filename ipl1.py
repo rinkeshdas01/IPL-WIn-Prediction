@@ -24,7 +24,7 @@ col3,col4=st.columns(2)
 with col3:
     runs_scored=st.number_input('Select the runs scored by the batting team',min_value=0,step=1)
 with col4:
-    wickets_fallen=st.number_input('Select the number of wickets fallen',min_value=0,step=1)
+    wickets_fallen=st.number_input('Select the number of wickets fallen',min_value=0,max_value=10,step=1)
 col5,col6=st.columns(2)
 with col5:
     over=st.number_input('Select the number of overs bowled',min_value=0,max_value=19,step=1)
